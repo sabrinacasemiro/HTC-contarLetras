@@ -1,6 +1,7 @@
 const $slogan = document.querySelector('.type-slogan')
 const $buttonVogal = document.querySelector('.button-count-vogal')
 const $buttonConsoante = document.querySelector('.button-count-consoante')
+const $buttonReset = document.querySelector('.button-new-slogan')
 const $result = document.querySelector('.result')
 
 const vogais = ['a', 'à', 'á', 'â', 'ã', 'e', 'é', 'ê', 'i', 'í', 'o', 'ó', 'ô', 'u']
@@ -30,10 +31,23 @@ function contarConsoante(){
     $result.textContent = 'Há ' + totalConsoante + ' consoantes.'
 }
 
+function resetInput(){
+    $slogan.value = ''
+}
+
+function resetResult(){
+    $result.textContent = ''
+}
+
 $buttonVogal.addEventListener('click', function(){
     contarVogal()
 })
 
 $buttonConsoante.addEventListener('click', function(){
     contarConsoante()
+})
+
+$buttonReset.addEventListener('click', function(){
+    resetInput()
+    resetResult()
 })

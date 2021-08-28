@@ -14,6 +14,18 @@ $margin: 50px;
     justify-content: center;
 }
 
-// @function calcularRem($size){
-//     @return $size/16px;
-// }
+@mixin button{
+    height: 40px;
+    font-family: $fontFamily;
+    color: $textColor;
+    background-color: $buttonColor;
+    border: 1px solid $borderColor;
+    font-size: calculadora-rem(15);
+    border-radius: $borderRadius;
+    cursor: pointer;
+}
+
+@function calculadora-rem($size){
+    $tamanho: $size/16;
+    @return $tamanho + rem;
+}

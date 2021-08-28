@@ -41,7 +41,7 @@ body {
   height: 30px;
   width: 70%;
   outline: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #C97B80;
   border: 1px solid #945A5E;
   border-radius: 5px;
@@ -66,19 +66,54 @@ body {
 }
 
 .button-count {
-  height: 100%;
-  width: 40%;
+  height: 40px;
   font-family: "Source Code Pro", monospace;
   color: #FFFFFF;
   background-color: #C97B80;
   border: 1px solid #945A5E;
-  font-size: 15px;
+  font-size: 0.9375rem;
   border-radius: 5px;
-  margin-bottom: 50px;
   cursor: pointer;
+  width: 40%;
+  margin-bottom: 50px;
 }
 
 .button-count:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+  height: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+}
+
+.button-new-slogan {
+  height: 40px;
+  font-family: "Source Code Pro", monospace;
+  color: #FFFFFF;
+  background-color: #C97B80;
+  border: 1px solid #945A5E;
+  font-size: 0.9375rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70%;
+}
+
+.button-new-slogan:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

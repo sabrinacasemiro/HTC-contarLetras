@@ -24,7 +24,7 @@ body{
     height: 30px;
     width: 70%;
     outline: none;
-    font-size: 20px;
+    font-size: calculadora-rem(20);
     color: $textColor2;
     border: 1px solid $borderColor;
     border-radius: $borderRadius;
@@ -39,16 +39,9 @@ body{
 }
 
 .button-count{
-    height: 100%;
+    @include button;
     width: 40%;
-    font-family: $fontFamily;
-    color: $textColor;
-    background-color: $buttonColor;
-    border: 1px solid $borderColor;
-    font-size: 15px;
-    border-radius: $borderRadius;
     margin-bottom: $margin;
-    cursor: pointer;
 }
 
 .button-count:hover {
@@ -60,5 +53,16 @@ body{
     height: 40px;
     width: 100%;
     @include display;
-    font-size: 20px;
+    font-size: calculadora-rem(20);
+    margin-bottom: $margin;
+}
+
+.button-new-slogan{
+    @include button;
+    width: 70%;
+}
+
+.button-new-slogan:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
