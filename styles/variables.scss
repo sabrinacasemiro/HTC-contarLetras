@@ -1,0 +1,19 @@
+$backgroundColor: #FF9BA1;
+$textColor: #FFFFFF;
+$textColor2: #C97B80;
+$borderColor: #945A5E;
+$buttonColor: #C97B80;
+
+$fontFamily: 'Source Code Pro', monospace;
+$borderRadius: 5px;
+$margin: 50px;
+
+@mixin display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// @function calcularRem($size){
+//     @return $size/16px;
+// }

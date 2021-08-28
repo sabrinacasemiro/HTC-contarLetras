@@ -1,0 +1,64 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body{
+    height: 100vh;
+    width: 100vw;
+    @include display;
+    font-family: $fontFamily;
+    color: $textColor;
+}
+
+.wrapper{
+    height: auto;
+    min-height: 50%;
+    width: 30%;
+    background-color: $backgroundColor;
+    @include display;
+    flex-direction: column;
+    border-radius: $borderRadius;
+    padding: 50px;
+}
+
+.type-slogan{
+    height: 30px;
+    width: 70%;
+    outline: none;
+    font-size: 20px;
+    color: $textColor2;
+    border: 1px solid $borderColor;
+    border-radius: $borderRadius;
+    margin-bottom: $margin;
+}
+
+.wrapper-button{
+    height: 40px;
+    width: 70%;
+    @include display;
+    justify-content: space-between;
+}
+
+.button-count{
+    height: 100%;
+    width: 40%;
+    font-family: $fontFamily;
+    color: $textColor;
+    background-color: $buttonColor;
+    border: 1px solid $borderColor;
+    font-size: 15px;
+    border-radius: $borderRadius;
+    margin-bottom: $margin;
+    cursor: pointer;
+}
+
+.button-count:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.result{
+    height: 40px;
+    width: 100%;
+    @include display;
+    font-size: 20px;
+}
